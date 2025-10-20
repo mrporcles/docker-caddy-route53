@@ -1,6 +1,6 @@
 FROM caddy:builder-alpine AS builder
 
-RUN xcaddy build v2.9.1\
+RUN xcaddy build\
     --with github.com/caddy-dns/route53
    
 FROM caddy:alpine
